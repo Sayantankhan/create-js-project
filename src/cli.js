@@ -1,6 +1,8 @@
 import arg from 'arg';
 import inquirer from 'inquirer';
 import { createProject } from './main';
+import figlet from'figlet';
+import chalk from 'chalk';
 
 function parseArgumentIntoOptions(args){
     const argObject = arg(
@@ -77,6 +79,11 @@ async function promptForMissingOptions(options) {
 }
 
 export function cli(args){
+    console.log(
+      chalk.blue(
+        figlet.textSync('JS/TS Project', { horizontalLayout: 'full' })
+      )
+    );
     let options = parseArgumentIntoOptions(args);
     var optionPromise = promptForMissingOptions(options);
     var projectPromise = optionPromise.then(option => {
