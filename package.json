@@ -1,0 +1,25 @@
+{
+  "name": "@sayantan_lucifer/create-js-project",
+  "version": "1.0.0",
+  "description": "A CLI to bootstrap project",
+  "main": "src/index.js",
+  "bin": {
+    "@sayantan_lucifer/create-js-project": "bin/create-js-projet",
+    "create-js-projet": "create-js-projet"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "create-js-project"
+  ],
+  "author": "Sayanytan Khan",
+  "license": "MIT",
+  "dependencies": {
+    "esm": "^3.2.25"
+  }
+}
